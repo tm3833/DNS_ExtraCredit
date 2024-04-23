@@ -153,7 +153,7 @@ def dns_query(type, name, server):
         if type == 1: # Lookup Type value
             # A record (IPv4 address)
             ipv4 = socket.inet_ntop(socket.AF_INET, rdata)
-            print(f'{name} has IPv4 address {ipv4}')\
+            print(f'{name} has IPv4 address {ipv4}')
             return ipv4
         elif type == 28: # Lookup Type value
             # AAAA record (IPv6 address)
